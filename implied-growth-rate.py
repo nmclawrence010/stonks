@@ -40,12 +40,12 @@ def calculate_implied_growth(market_cap, net_debt, base_fcf, years, terminal_gro
 # Example usage:
 if __name__ == "__main__":
     # Example inputs (replace with actual data for the company you're analyzing)
-    market_cap = 15.82  # billion
-    net_debt = -1.1  # billion (negative indicates net cash position)
-    base_fcf = 0.2  # billion
+    market_cap = 600  # billion
+    net_debt = -16.3  # billion (negative indicates net cash position)
+    base_fcf = 19  # billion
     years = 10
     terminal_growth = 0.03
-    discount_rate = 0.15
+    discount_rate = 0.095
 
     implied_growth = calculate_implied_growth(market_cap, net_debt, base_fcf, years, terminal_growth, discount_rate)
     print(f"Implied Growth Rate: {implied_growth:.2%}")
